@@ -1,0 +1,58 @@
+Entity:
+Schedule 246 16
+null  * 
+totalCost int 3 false false false duration int 3 false false false
+
+Entity:
+Story 498 173
+null  * 
+storyId String 3 false true false
+
+Entity:
+Staff 44 284
+null  * 
+staffId String 3 false true false costDay int 3 false false false
+
+Entity:
+Task 315 283
+null  * 
+taskId String 3 false true false duration int 3 false false false
+
+Entity:
+Assignment 263 160
+null  * 
+
+
+Entity:
+Skill 315 443
+null  * 
+skillId String 3 false true false
+
+Association:
+Story Task 1 527 210 526 286 0 contains null 
+ordered 
+
+Association:
+Schedule Assignment 1 315 65 315 162 0 consistsOf null 
+
+
+Association:
+Assignment Staff 1 301 182 163 288 1 assignedTo null 
+
+
+Association:
+Task Skill 0 434 333 434 446 0 requires null 
+
+
+Association:
+Staff Skill 0 254 336 320 446 0 has null 
+
+
+Association:
+Assignment Task 1 331 181 432 286 1 assignedFor null 
+
+
+Association:
+Task Task 0 565 312 548 332 0 dependsOn null 
+
+
